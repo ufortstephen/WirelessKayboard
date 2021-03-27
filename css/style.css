@@ -1,0 +1,342 @@
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Noto Serif SC', serif;
+}
+
+body{
+    animation: body 3s linear 0s;
+}
+
+
+.container-one{
+    width: 80%  !important;
+
+}
+
+.color-one{
+    background-color: #ec6816;
+    font-size: small;
+    animation: header1 4s ease-in-out 0s;
+
+}
+
+.header-button{
+    background-color: #e8eef2;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-size: small;
+    color: #162442;
+    font-weight: bolder;
+    animation: header1 5s ease-in-out 0s;
+
+}
+
+.section-text{
+    color: #162442;
+    font-weight: 900 !important;
+    font-family: 'Play', sans-serif;
+    
+}
+.section-text2{
+    color: #162442;
+    font-weight: 900 !important;
+    font-family: 'Play', sans-serif;
+    margin-top: -10px !important;
+}
+.section-one-left{
+    animation-name: section1;
+    animation-duration: 3s;
+    animation-delay: 0s;
+
+}
+
+.section-one-left p{
+    width: 80%;
+    text-shadow: 3px 0px #c5c5c5;
+    font-size: larger;
+    
+}
+.section-one-button button{
+    background-color: #ec6816;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: medium;
+}
+.section-one-button button:hover{
+    background-color: #000;
+    color: #ec6816 !important;
+    box-shadow: 0px 0px 4px 0px #162442;
+}
+
+.section-one-right{
+    background: url(../images/keyboard-1.jpg) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    height: 350px;
+    animation-name: section2;
+    animation-duration: 2s;
+
+}
+
+
+
+.section-two{
+    padding-top: 4rem !important;
+    display: grid;
+    grid-template-areas: "one two three";
+    grid-template-columns: 20% 45% 35%;
+    /* grid-gap: 10px; */
+    animation: section22 3s linear 0s;
+}
+.section-two-img1{
+    grid-area: one;
+    background: url(../images/comp1.jpg);
+    height: 400px;
+    /* background-blend-mode:overlay;
+    background-color: #e16015; */
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.section-two-img2{
+    grid-area: two;
+    background: url(../images/comp2.jpg);
+    height: 400px;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.section-two-img3 {
+    grid-area: three;
+    padding-top: 6rem !important;
+    width: 100%;
+    padding-left: 4rem !important;
+}
+
+.section-two-img3 h3{
+    text-transform: uppercase;
+    color: #162442;
+    font-weight: bolder !important;
+    font-family: 'Play', sans-serif;
+    font-size: 2rem;
+
+}
+.section-two-img3 p{
+    text-shadow: 3px 0px #c5c5c5;
+}
+
+.section-three{
+    padding: 4rem 0 !important;
+}
+
+.section-three i{
+    background-color: #ec6816;
+    border-radius: 20px;
+    font-size: 2.5rem;
+}
+.section-three h5{
+    text-transform: uppercase;
+    color: #162442;
+    font-weight: bolder !important;
+    font-family: 'Play', sans-serif;
+    font-size: 1.5rem;
+}
+
+footer p{
+    color: #162442;
+    text-shadow: 3px 0px #c5c5c5;
+    font-size: large;
+}
+
+
+
+
+@keyframes section2 {
+    from{
+        position: relative;
+        right: -400px;
+    }
+    to{
+        position: relative;
+        right: 0px;
+
+    }
+}
+@keyframes section1 {
+    from{
+        position: relative;
+        left: -400px;
+    }
+    to{
+        position: relative;
+        left: 0px;
+
+    }
+}
+
+@keyframes header1 {
+    from{
+        position: relative;
+        bottom: 500px;
+    }
+    to{
+        bottom: 0px;
+    }
+}
+
+@keyframes section22 {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes body {
+    from{
+        background-color: #000;
+    }
+    to{
+        background-color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1092px){
+    .section-two-img3{
+        width: 100%;
+        padding-top: 3rem !important;
+    }
+}
+
+@media screen and (max-width:778px){
+    .section-two-img3{
+        padding-left: 0px !important;
+    }
+
+    .section-three {
+        display: block !important;
+        text-align: center;
+    }
+
+    .section-three div{
+        margin-bottom:  3rem !important;
+        box-shadow:  0px 0px 3px 2px #c5c5c5;
+        padding: 2rem 1rem !important;
+        margin:  0 !important;
+        margin-bottom: 3rem !important;
+    }
+
+    /* .section-three div p{
+        padding-top: 2rem !important;
+    } */
+
+    .section-two{
+        grid-template-areas: "one two";
+        grid-template-columns: 40% 60%;
+    }
+
+    
+
+    .section-two-img1{
+        background-attachment: fixed;
+        margin-bottom: 3rem !important;
+        border-radius: 0px 20px 20px 0px;
+    }
+
+    .section-two-img2{
+        background-attachment: fixed;
+        margin: 0rem !important
+    }
+    .section-two-img3{
+        grid-area: three;
+        grid-column: 1/3;
+        text-align: center;
+        margin-bottom:  0 !important;
+
+    }
+
+    .section-one-display{
+        display: block !important;
+    }
+    .section-one-left{
+        text-align: center;
+    }
+    .section-one-left p{
+        width: 100%;
+    }
+
+    .section-one-right{
+        width: 100% !important;
+        margin-top: 4rem !important;
+    }
+    .section-one-buttons-container{
+        justify-content: space-between;
+    }
+
+    .section-three{
+        padding: 1rem 0 !important;
+    }
+}
+
+ @media screen and (max-width:432px){
+        .container-one{
+            width: 100% !important;
+            padding: 0px 1rem !important;
+        }
+        .fa-3x{
+            font-size: 2em !important;
+        }
+
+        .section-one-display{
+            margin-top: 1rem !important;
+        }
+        .section-two-img3 h3{
+            font-size: large;
+        }
+        .section-two-img3 p{
+            font-size: medium;
+        }
+
+        .section-three i{
+            font-size: 1rem;
+            
+        }
+
+        .section-three h5{
+            font-size: large;
+        }
+        .section-three div p{
+            font-size: small;
+        }
+
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

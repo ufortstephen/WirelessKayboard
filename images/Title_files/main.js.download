@@ -1,0 +1,74 @@
+//  var text = "I am number";
+
+// var num;
+
+// for(num =1; num <=10; num++){
+
+//     switch(num){
+
+//         case 4 : alert(`${text} Fizz`);
+//         break;
+
+//         case 7 :alert(`${text} Buzz`);
+//         break;
+
+//         case 10 : alert(`${text} FizzBuzz`)
+//         break;
+
+//         default:
+//             alert(`${text} ${num}`)
+//         break;
+
+//     }
+// }
+
+// for(num =1; num <=10; num++){
+//     if(num==4){
+//         alert(`${text} Fizz`);
+//     }
+//     else if(num==7){
+//         alert(`${text} Buzz`);
+//     }
+//     else if(num==10){
+//         alert(`${text} FizzBuzz`);
+//     }
+//     else{
+//         alert(`${text} ${num}`)
+//     }
+
+// };
+
+
+
+// var userName = prompt("What is your name?");
+// var dateOfBirth = prompt("What year were you born");
+// var age = 2021 - dateOfBirth;
+// if (age == 18){
+//     var newName = prompt("Enter your username");
+//     if(newName!== userName){
+//         alert("Wrong Name")
+//     }
+// }
+
+function loginProcess() {
+    var copy = alert("Please copy the code that shows next");
+    var x = Math.random();
+    var randomId = alert(x);
+    var userName = prompt("Username?");
+    var password = prompt("Password");
+    var check ="Verify random ID";
+    if (password.length < 8){
+        loginProcess();
+    }
+    else{
+        check = +prompt("Verify Random Id")
+    }
+    if(check == x){
+        alert("Successful")
+    }
+    else{
+        alert("Wrond ID")
+        loginProcess();
+    }
+}
+loginProcess();
