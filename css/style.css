@@ -37,13 +37,13 @@ body{
 .section-text{
     color: #162442;
     font-weight: 900 !important;
-    font-family: 'Play', sans-serif;
+    font-family: 'Heebo', sans-serif;
     
 }
 .section-text2{
     color: #162442;
-    font-weight: 900 !important;
-    font-family: 'Play', sans-serif;
+    font-weight: 100 !important;
+    font-family: 'Heebo', sans-serif;
     margin-top: -10px !important;
 }
 .section-one-left{
@@ -64,8 +64,13 @@ body{
     border: none;
     outline: none;
     border-radius: 6px;
-    font-size: medium;
+    font-size: small;  
 }
+
+.small-text{
+    font-size: small !important;
+}
+
 .section-one-button button:hover{
     background-color: #000;
     color: #ec6816 !important;
@@ -85,7 +90,7 @@ body{
 
 
 .section-two{
-    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
     display: grid;
     grid-template-areas: "one two three";
     grid-template-columns: 20% 45% 35%;
@@ -96,8 +101,8 @@ body{
     grid-area: one;
     background: url(../images/comp1.jpg);
     height: 400px;
-    /* background-blend-mode:overlay;
-    background-color: #e16015; */
+    background-blend-mode:overlay;
+    background-color:#e66317b0;
     background-size: cover;
     border-radius: 10px;
 }
@@ -108,6 +113,7 @@ body{
     height: 400px;
     background-size: cover;
     border-radius: 10px;
+    
 
 }
 
@@ -116,13 +122,13 @@ body{
     padding-top: 6rem !important;
     width: 100%;
     padding-left: 4rem !important;
+    
 }
 
 .section-two-img3 h3{
     text-transform: uppercase;
     color: #162442;
-    font-weight: bolder !important;
-    font-family: 'Play', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-size: 2rem;
 
 }
@@ -142,15 +148,36 @@ body{
 .section-three h5{
     text-transform: uppercase;
     color: #162442;
-    font-weight: bolder !important;
-    font-family: 'Play', sans-serif;
     font-size: 1.5rem;
+    font-family: 'Heebo', sans-serif;
 }
 
 footer p{
     color: #162442;
     text-shadow: 3px 0px #c5c5c5;
     font-size: large;
+}
+
+::-webkit-scrollbar-thumb{
+    color: #ec6816;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+    background-color: #1624420e;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: linear-gradient(#162442, white, #ec6816);
 }
 
 
@@ -214,13 +241,6 @@ footer p{
 
 
 
-@media screen and (max-width:1092px){
-    .section-two-img3{
-        width: 100%;
-        padding-top: 3rem !important;
-    }
-}
-
 @media screen and (max-width:778px){
     .section-two-img3{
         padding-left: 0px !important;
@@ -248,7 +268,10 @@ footer p{
         grid-template-columns: 40% 60%;
     }
 
-    
+    .section-two-img3{
+        width: 100%;
+        padding-top: 0rem !important;
+    }
 
     .section-two-img1{
         background-attachment: fixed;
@@ -321,6 +344,11 @@ footer p{
         .section-three div p{
             font-size: small;
         }
+
+        footer p{
+            font-size: small;
+        }
+        
 
 
 

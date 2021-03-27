@@ -1,6 +1,13 @@
 alert("Welcome, please copy the code that displays next");
-var x = Math.random();
-var userId = alert(x);
+
+ function getRandomInt(min, max) {
+    min = Math.ceil(1000);
+    max = Math.floor(8000);
+    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+  }
+  var x =getRandomInt(1000, 8000);
+  alert(x)
+  
 
 function getDetails() {
     var userName = prompt("What is your name");
